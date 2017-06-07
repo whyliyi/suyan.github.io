@@ -16,7 +16,7 @@ recent_num: 20
 github: whyliyi
 
 # avatar and Favicon
-avatar: https://github.com/whyliyi/whyliyi.github.io/blob/master/_img/my.png
+avatar: https://raw.githubusercontent.com/whyliyi/whyliyi.github.io/master/_img/my.png
 favicon: http://7u2ho6.com1.z0.glb.clouddn.com/site-favicon.ico
 
 # disqus config
