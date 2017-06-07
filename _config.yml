@@ -1,5 +1,5 @@
 # Site settings
-title: 绝密空间
+title: 云计算小白
 email: liyi8611@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   随手写，随手记，给20年后留点回忆
@@ -17,11 +17,6 @@ github: whyliyi
 
 # avatar and Favicon
 avatar: https://raw.githubusercontent.com/whyliyi/whyliyi.github.io/master/_img/my.png
-favicon: http://7u2ho6.com1.z0.glb.clouddn.com/site-favicon.ico
-
-# disqus config
-disqus:
-  shortname: suyan-zh
 
 # Build settings
 permalink: /:year/:month/:day/:title.html
