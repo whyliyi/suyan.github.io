@@ -89,6 +89,7 @@ Terraform有自己的配置语言（Configuration Language）。配置语言最�
 
 
 ## Provider
+
 这个用中文怎么翻译呢？？还是不翻译了，就是Provider
 
 Resource定义的是资源参数，但是资源可以执行的操作全部在Provider中定义。每一个Provider提供一套资源类型，定义每个资源可以指定的参数、如何调用云端API实现资源的各种操作等；
@@ -114,6 +115,7 @@ Resource定义的是资源参数，但是资源可以执行的操作全部在Pro
 * Provider可执行文件命名规则：`terraform-provider-<NAME>_vX.Y.Z`，其中`<Name>`是Provider名称，`vX.Y.Z`是Provider的版本号。
 
 ## 入参（Input Variables）
+
 >
 	variable "region" {
 	  default = "us-east-1"
@@ -141,6 +143,7 @@ Resource定义的是资源参数，但是资源可以执行的操作全部在Pro
 还可以通过环境变量的方式定义参数值，形式如：`TF_VAR_name`，比如`TF_VAR_region`，修改`TF_VAR_region`环境变量的值可以修改region参数的值
 
 ## 出参（Output Values）
+
 在很多时候，我们需要将在云环境上创建的实例某些属性暴露给用户，比如创建的虚拟机需要暴露网卡地址，创建的web server需要暴露访问地址，因此有了出参（Output Values），出参可以将实例的属性或者组合的属性暴露给用户，最大程度降低用户访问实例资源的可能。
 
 举个栗子：我们需要创建一个mysql数据库，用户实际上不需要关心mysql创建的虚拟机是什么，但是用户需要知道mysql虚拟的IP、访问端口等，因此我们通过定义Output来将mysql的相关信息返回：
@@ -157,6 +160,7 @@ Resource定义的是资源参数，但是资源可以执行的操作全部在Pro
 Output可以有很多设置，比如`sensitive`可以保证输出参数在控制台不可见，但是在模块内部可见。`depends_on`可以显示指定出参的依赖资源。等等
 
 ## 局部参数（Local Values）
+
 局部参数可以在某一个模块内定义，主要用途是方便在同一个模块中多次使用，一般来说是常量。
 >
 	locals {
@@ -172,11 +176,13 @@ Output可以有很多设置，比如`sensitive`可以保证输出参数在控制
 	  }
 	}
 ## 模块（Modules）
+
 模块可以包含多个Terraform配置文件（模板），主要是为了方便资源重用、复杂场景模块化需要。在同一个工作目录内定义一系列`.tf`文件，来整合一个复杂场景，充分利用一些基础资源等等。
 
 module有众多好处，一两句话也说不清除，后续重点学习一下，写一篇专门的学习笔记。
 
 ##数据定义（Data Sources）
+
 没看懂，先不写了。:)
 
 以上就是一些基本概念吧。

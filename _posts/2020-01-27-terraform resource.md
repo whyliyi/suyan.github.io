@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Terraform基本概念
+title: Terraform resource
 category: Terraform
 keywords: terraform, orchestration, 编排, 开源
 ---
