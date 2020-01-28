@@ -98,9 +98,10 @@ keywords: terraform, orchestration, 编排, 开源
 
 >
 	list(any)：
-* 如果传值为list(["a", "b", "c"])，那么list(any)会被Terraform解析成list(string)。
-* 如果传入list([1, 2, 3])，会被Terraform解析成list(number)。
-* 如果传入list([1, [], 3])，由于`[]`无法转换成和1、3同一个数据类型，因此Terraform会报错。
+>
+	+ 如果传值为list(["a", "b", "c"])，那么list(any)会被Terraform解析成list(string)。
+	+ 如果传入list([1, 2, 3])，会被Terraform解析成list(number)。
+	+ 如果传入list([1, [], 3])，由于`[]`无法转换成和1、3同一个数据类型，因此Terraform会报错。
 
 >
 
@@ -156,9 +157,9 @@ testing.tfvars文件内容如下：
 	]
 
 Terraform会自动加载文件夹中以下文件（如果有）以初始化变量。
-
- 	- 文件名为`terraform.tfvars`或者`terraform.tfvars.json`
-	- 文件以后缀名为`.auto.tfvars`或者`.auto.tfvars.json`
+>
+ 	+ 文件名为`terraform.tfvars`或者`terraform.tfvars.json`
+	+ 文件以后缀名为`.auto.tfvars`或者`.auto.tfvars.json`
 
 * 环境变量传值
 
@@ -171,11 +172,12 @@ Terraform会自动加载文件夹中以下文件（如果有）以初始化变�
 
 按照一下顺序搜索参数的值，后边的参数值会覆盖前边的参数值。
 
-	- 环境变量
-	- terraform.tfvar文件
-	- terraform.tfvars.json文件
-	- *.auto.tfvars或者*.auto.tfvars.json文件
-	- "-var"和"-var-file"指定的参数值或者参数文件
+>
+	1. 环境变量
+	2. terraform.tfvar文件
+	3. terraform.tfvars.json文件
+	4. *.auto.tfvars或者*.auto.tfvars.json文件
+	5. "-var"和"-var-file"指定的参数值或者参数文件
 
 
 ---------------------------
