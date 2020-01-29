@@ -115,3 +115,7 @@ keywords: terraform, module, orchestration, 编排, 开源
 	}
 	
 可以看出，同一个`./publish_bucket`可以被多次引用。
+
+## 模块发布
+
+模块可以通过[Terraform Cloud Registry](!https://registry.terraform.io/)直接发布，但是需要公网才能访问，因此对私有云用户不太合适。
