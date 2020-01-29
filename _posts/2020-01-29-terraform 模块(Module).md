@@ -118,4 +118,20 @@ keywords: terraform, module, orchestration, 编排, 开源
 
 ## 模块发布
 
-模块可以通过[Terraform Cloud Registry](!https://registry.terraform.io/)直接发布，但是需要公网才能访问，因此对私有云用户不太合适。
+模块可以通过[Terraform Cloud Registry](!https://registry.terraform.io/)直接发布，但是需要公网才能访问，因此对私有云用户不太合适。后边具体学习后再写。
+
+## 模块引用的方式
+
+模块引用的方式有很多种，后边具体学习后在写：
+
+* Local paths
+* Terraform Registry
+* GitHub
+* Bitbucket
+* Generic Git, Mercurial repositories
+* HTTP URL
+* S3 buckets
+* GCS buckets
+
+---------
+以上
