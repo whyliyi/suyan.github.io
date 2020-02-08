@@ -207,7 +207,7 @@ Terraform包含了很多内置函数，内置函数可以在terraform控制端�
 
 ## [网络相关函数](!https://www.terraform.io/docs/configuration/functions/cidrhost.html)
 
-## [类型转换函数](!https://www.terraform.io/docs/configuration/functions/can.html)
+## [类型转换函数](https://www.terraform.io/docs/configuration/functions/can.html)
 	
 * can：计算给定的表达式，是否能够无错误的算出结果
 
